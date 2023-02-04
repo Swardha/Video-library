@@ -47,7 +47,7 @@ const Home = () => {
                     .map((filterItems) => {
                       return (
                        
-                        <div className="col-12 col-md-6 col-lg-3"
+                        <div className=" wrap col-12 col-md-6 col-lg-3"
                           key={filterItems._id}
                           
                         >

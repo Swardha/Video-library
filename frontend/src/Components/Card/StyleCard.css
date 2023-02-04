@@ -7,48 +7,93 @@
 .card{
   height: 380px;
   width: 300px;
-  margin-bottom: 30px;
+  padding: 5px;
+  margin: 30px auto;
 }
 
-/* LikeCard section */
 
-/* Like section */
 
 
 
 /* Home section */
+.row{
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* .card-row{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+} */
+
+/* .card-col{
+  display: flex;
+  flex-direction: row;
+} */
 .container{
     background-color: rgb(182, 179, 228);
-   margin:auto;
-    max-width:100%;
-    justify-content: center;
-    align-items: center;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
  
  
 }
-/* 
-.card-col{
+
+.wrap{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex: 0 0 auto;
+  width: 30%;
+  justify-content: space-around;
+}
+
+
+@media (max-width: 992px){
+.wrap{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex: 0 0 auto;
+width:40%;
+  justify-content: space-around;
+
+}  
+
+}
+
+@media (max-width: 700px){
+  .wrap{
+    display: block;
+   
+  width:60%;
+    justify-content: center;
+  
+  }  
+
+  .row{
+    display: block;
     
- display: grid;
-    grid-template-columns: repeat(3, 1fr);
-} */
+      justify-content: space-around;
+      width:100%;
+      margin: auto;
+      align-items: center;
+  }
 
-/* .col{
-    
-    grid-template-columns: repeat(4, 1fr);
-} */
+  .card{
+    height: 380px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 30px auto;
+  }
+  
+  }
 
-/* s */
 
-/* .row{
-    display: grid;
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-columns: repeat(6, 1fr);
-    grid-gap: 1rem;
-} */
-
-/* .column{
-display: grid;
-    grid-template-columns: repeat(6, 1fr);
-} */
 
