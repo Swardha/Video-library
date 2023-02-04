@@ -17,7 +17,7 @@ const state = location.state.data;
    
    
   return (
-    <div>
+    <div className='container' >
         <div
           className="card m-3" 
           style={{ height: "500px" }}

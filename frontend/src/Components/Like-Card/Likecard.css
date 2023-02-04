@@ -1,0 +1,83 @@
+.section{
+    background-color: rgb(221, 177, 230);
+    max-width: 100%;
+}
+
+.like-container{
+    
+    display:grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+
+}
+
+.like-heading{
+    text-align: center;
+}
+
+/* .col{
+    display: grid;
+   
+} */
+
+/* likeCard section */
+.card-layout{
+    margin: 15px;
+     width: 18rem;
+      max-height: 360px ;
+
+     
+}
+
+@media only screen and (max-width: 1200px){
+    .section{
+        background-color: rgb(39, 5, 46);
+        max-width: 100%;
+    }
+
+    .like-container{
+    
+        display:grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .section{
+        background-color: rgb(22, 211, 164);
+        max-width: 100%;
+    }
+
+    
+    .like-container{
+    
+        display:grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .section{
+        background-color: rgb(22, 211, 164);
+        max-width: 100%;
+    }
+
+    
+    .like-container{
+        /* width: 100%; */
+        justify-content: center;
+        align-items:center ;
+        display:block;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    
+    }
+}

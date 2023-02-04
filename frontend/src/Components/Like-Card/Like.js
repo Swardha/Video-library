@@ -1,27 +1,30 @@
 import React, { useContext } from "react";
-import { GlobalContext } from "../context/GlobalState";
+import { GlobalContext } from "../../context/GlobalState";
 import LikeCard from "./LikeCard";
+import './Likecard.css';
 
 const Like = () => {
   const { likelist } = useContext(GlobalContext);
 
   return (
-    <div >
-     <h1>Liked Videos</h1>
-    
+    <>
+        
+    <div className="section" >
+    <h1  className="like-heading">Liked Videos</h1>
+
     {likelist.length > 0 ? (
-       <div className="container"  >
+       <div className="like-container"  >
        {likelist.map((props)=>(
-          <div className="row mb-2">
+       <div  >
          
-         <div 
-              className="col-12 col-md-6 col-lg-3 "
-              style={{ width: "18rem", maxHeight: "360px" }} >
+         <div className="col"
+             
+              >
             
             <LikeCard props={props} type="likelist" />
            
-            </div>
-      
+            </div>   
+         
        
         </div>
        ))}
@@ -34,6 +37,7 @@ const Like = () => {
     )}
  
     </div>
+    </>
    
   );
 };

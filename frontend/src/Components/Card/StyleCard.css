@@ -1,0 +1,54 @@
+*{
+    margin:0;
+    padding:0;
+}
+/* Card section */
+
+.card{
+  height: 380px;
+  width: 300px;
+  margin-bottom: 30px;
+}
+
+/* LikeCard section */
+
+/* Like section */
+
+
+
+/* Home section */
+.container{
+    background-color: rgb(182, 179, 228);
+   margin:auto;
+    max-width:100%;
+    justify-content: center;
+    align-items: center;
+ 
+ 
+}
+/* 
+.card-col{
+    
+ display: grid;
+    grid-template-columns: repeat(3, 1fr);
+} */
+
+/* .col{
+    
+    grid-template-columns: repeat(4, 1fr);
+} */
+
+/* s */
+
+/* .row{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 1rem;
+} */
+
+/* .column{
+display: grid;
+    grid-template-columns: repeat(6, 1fr);
+} */
+

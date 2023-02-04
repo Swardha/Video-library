@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import PrivateComp from "./Components/PrivateComp";
 import Navbar from "./Components/Navbar";
 import Logout from "./Components/Logout";
-import Like from "./Components/Like";
+import Like from "./Components/Like-Card/Like";
 import Home from "./Components/Home";
 // import Footer from "./Components/Footer";
 import Login from "./Components/Login";

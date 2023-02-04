@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-
-import Card from "./Card";
+import './Card/StyleCard.css';
+import Card from "./Card/Card";
 
 
 
@@ -34,8 +34,8 @@ const Home = () => {
         {videoCat !== [] ? (
           videoCat.map((data) => {
             return (
-              <div className="row mb-3">
-                <div key={data._id} className="fs-3 m-3">
+              <div className="row mb-3" >
+                <div key={data._id} className="fs-3 m-3" >
                   {" "}
                   {data.CategoryName}{" "}
                 </div>
@@ -47,10 +47,11 @@ const Home = () => {
                     .map((filterItems) => {
                       return (
                        
-                        <div
+                        <div className="col-12 col-md-6 col-lg-3"
                           key={filterItems._id}
-                          className="col-12 col-md-6 col-lg-3"
+                          
                         >
+                          <div  >
 
 
                           <Card vkey={filterItems._id}
@@ -59,7 +60,7 @@ const Home = () => {
                             desc={filterItems.description}
                             channel={filterItems.channelName}
                           />
-                         
+                         </div>
                         
                       
                        

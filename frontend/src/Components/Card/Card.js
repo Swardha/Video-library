@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
-import { GlobalContext } from "../context/GlobalState";
-
+import { GlobalContext } from "../../context/GlobalState";
+import '../Card/StyleCard.css';
 import { NavLink } from "react-router-dom";
 
 const Card = (props) => {
@@ -27,8 +27,8 @@ const Card = (props) => {
     <div>
       
         <div
-          className="card m-3"
-          style={{ width: "18rem", maxHeight: "360px" }}
+          className="card"
+          
         >
             <NavLink to="/video" state={{ data: data}}>
           <div className="ratio ratio-16x9">

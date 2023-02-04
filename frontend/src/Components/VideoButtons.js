@@ -9,7 +9,7 @@ export const VideoButtons = ({props, type}) => {
       {
         type === 'likelist' && (
             <>
-            <button className='ctrl-btn' onClick={()=> removeVideoFromLikelist(props.vkey)} >
+            <button type='button' className='ctrl-btn' onClick={()=> removeVideoFromLikelist(props.vkey)} >
             <i class="fa-sharp fa-solid fa-trash"></i>
             </button>
             </>
