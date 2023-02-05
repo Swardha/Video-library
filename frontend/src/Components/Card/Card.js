@@ -27,9 +27,7 @@ const Card = (props) => {
     <div>
       
         <div
-          className="card"
-          
-        >
+          className="card">
             <NavLink to="/video" state={{ data: data}}>
             <div  className='card-layout' style={{"width":"18rem" , "maxHeight":"360px", "margin":"auto"}} >
           <div className="ratio ratio-16x9  w-100">
