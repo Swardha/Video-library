@@ -3,14 +3,11 @@ import { VideoButtons } from '../VideoButtons'
 import '../Like-Card/Likecard.css';
 
 const LikeCard = ({props, type}) => {
+  console.log(props)
   return (
     <div  className='card-layout'  >
        <div className="ratio ratio-16x9" >
-                <iframe
-                  src={props.vidid}
-                  title="YouTube video"
-                  asllowfullscreen
-                ></iframe>
+       <img src= {props.thumbnail} alt="img" />
               </div>
 
               <div className="card-body m-2 p-2 ">

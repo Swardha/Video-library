@@ -59,6 +59,7 @@ const Home = () => {
                           vidid={filterItems.Videoid}
                             desc={filterItems.description}
                             channel={filterItems.channelName}
+                            thumbnail={filterItems.thumbnail}
                           />
                          </div>
                         

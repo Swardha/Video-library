@@ -19,12 +19,13 @@ const state = location.state.data;
   return (
     <div className='container' >
         <div
-          className="card m-3" 
-          style={{ height: "500px" }}
+          className="card" 
+          style={{ height: "500px", "width":"100%" }}
         >
           
-            <iframe   style={{ height: "500px" }}
+            <iframe   style={{ height: "500px", "width":"100%" }}
                   controls
+                  allowfullscreen
                   playing={true}
               src={state.vidid}
               title="YouTube video"

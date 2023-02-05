@@ -4,7 +4,7 @@ const router = express.Router();
 
 router.post('/videoData', (req, res)=>{
     try{
-        // console.log(global.list)
+        console.log(global.list)
         res.send([global.list, global.videoCategory])
 
     } catch(e){

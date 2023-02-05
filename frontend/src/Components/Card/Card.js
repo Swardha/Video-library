@@ -31,20 +31,21 @@ const Card = (props) => {
           
         >
             <NavLink to="/video" state={{ data: data}}>
-          <div className="ratio ratio-16x9">
+            <div  className='card-layout' style={{"width":"18rem" , "maxHeight":"360px", "margin":"auto"}} >
+          <div className="ratio ratio-16x9  w-100">
+            <img src= {props.thumbnail} alt="img" />
+            </div>  </div>
+          </NavLink>
          
-            <iframe
+            {/* <iframe
               src={props.vidid}
               title="YouTube video"
               asllowfullscreen
-            ></iframe>
+            ></iframe> */}
 
             {/* <iframe width="853" height="480" src="https://www.youtube.com/embed/RV0iNoEGnz0" title="Palak Paneer Recipe | How To Make Easy Palak Paneer | Cottage Cheese In Spinach Gravy | Varun" frameborder="0" allow="accelerometer; autoplay; 
             clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> */}
 
-
-          </div>  
-          </NavLink>
           <div className="card-body">
             {/* <h1>{props.vkey} </h1> */}
             <h5 className="card-title">{props.name}</h5>
