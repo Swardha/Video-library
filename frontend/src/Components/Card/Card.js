@@ -4,11 +4,14 @@ import '../Card/StyleCard.css';
 import { NavLink } from "react-router-dom";
 
 const Card = (props) => {
+  console.log(props)
 // const Card = ({props}) => {
 
-  const { addVideoToLikelist } = useContext(GlobalContext);
+  const { addVideoToLikelist, likelist } = useContext(GlobalContext);
+const storevideo = likelist.find(o => o.vkey === props.vkey);
 
-
+const disable = storevideo? true
+: false;
 
   const [data, setData] = useState([]);
 
@@ -29,7 +32,7 @@ const Card = (props) => {
         <div
           className="card">
             <NavLink to="/video" state={{ data: data}}>
-            <div  className='card-layout' style={{"width":"18rem" , "maxHeight":"360px", "margin":"auto"}} >
+            <div  className='card-layout' >
           <div className="ratio ratio-16x9  w-100">
             <img src= {props.thumbnail} alt="img" />
             </div>  </div>
@@ -41,9 +44,6 @@ const Card = (props) => {
               asllowfullscreen
             ></iframe> */}
 
-            {/* <iframe width="853" height="480" src="https://www.youtube.com/embed/RV0iNoEGnz0" title="Palak Paneer Recipe | How To Make Easy Palak Paneer | Cottage Cheese In Spinach Gravy | Varun" frameborder="0" allow="accelerometer; autoplay; 
-            clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> */}
-
           <div className="card-body">
             {/* <h1>{props.vkey} </h1> */}
             <h5 className="card-title">{props.name}</h5>
@@ -52,6 +52,7 @@ const Card = (props) => {
             <button
               type="button"
               className="btn ctrl-btn"
+              disabled={disable}
               onClick={() => addVideoToLikelist(props)}
           
             >
