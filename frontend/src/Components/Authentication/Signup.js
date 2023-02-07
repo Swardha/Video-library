@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom';
+import '../Authentication/authenticate.css';
 
 const Signup = () => {
     const [name, setName] = useState("");
@@ -34,18 +35,18 @@ const Signup = () => {
     }
   return (
     <div>
-      <div className="container" >
-        <h1>Signup</h1><br/>
-        <input className="input" type="text" value={name} placeholder="Enter Name"
+      <div className="auth-container" >
+        <h1 className='head-1'>Signup</h1><br/>
+        <input className="auth-input" type="text" value={name} placeholder="Enter Name"
          onChange={(e)=>setName(e.target.value)} />
         <br/>
-        <input className="input" value={email} type="text" placeholder="Enter Email"
+        <input className="auth-input" value={email} type="text" placeholder="Enter Email"
          onChange={(e)=>setEmail(e.target.value)} />
         <br/>
-        <input className="input" type="password" value={password} placeholder="Enter Password" 
+        <input className="auth-input" type="password" value={password} placeholder="Enter Password" 
         onChange={(e)=>setPassword(e.target.value)} />
         <br/>
-        <input className="input" type="password" value={cpassword} placeholder="Confirm Password"
+        <input className="auth-input" type="password" value={cpassword} placeholder="Confirm Password"
          onChange={(e)=>setCPassword(e.target.value)} />
         <br/>
         <button className='button' onClick={getData} >Signin</button>

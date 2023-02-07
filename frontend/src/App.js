@@ -1,14 +1,14 @@
 import "./App.css";
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import PrivateComp from "./Components/PrivateComp";
+import PrivateComp from "./Components/Authentication/PrivateComp";
 import Navbar from "./Components/Navbar";
-import Logout from "./Components/Logout";
+import Logout from "./Components/Authentication/Logout";
 import Like from "./Components/Like-Card/Like";
 import Home from "./Components/Home";
 // import Footer from "./Components/Footer";
-import Login from "./Components/Login";
-import Signup from "./Components/Signup";
+import Login from "./Components/Authentication/Login";
+import Signup from "./Components/Authentication/Signup";
 import Video from "./Components/Video";
 import { GlobalProvider } from "./context/GlobalState";
 

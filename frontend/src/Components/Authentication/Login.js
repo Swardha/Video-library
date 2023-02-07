@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState, useEffect} from 'react';
 import { useNavigate } from 'react-router-dom';
-
+import '../Authentication/authenticate.css';
 
 const Login = () => {
     const [email, setEmail] = useState("");
@@ -39,13 +39,13 @@ const Login = () => {
       
     }
   return (
-    <div>
-       <div className="container" >
-        <h1>Login</h1><br/>
-        <input className="input" value={email} type="text" placeholder="Enter Email"
+    <div className='auth-section'>
+       <div className="auth-container" >
+        <h1 className='head-1'>Login</h1><br/>
+        <input className="auth-input" value={email} type="text" placeholder="Enter Email"
          onChange={(e)=>setEmail(e.target.value)} />
         <br/>
-        <input className="input" type="password" value={password} placeholder="Enter Password" 
+        <input className="auth-input" type="password" value={password} placeholder="Enter Password" 
         onChange={(e)=>setPassword(e.target.value)} />
         <br/>
         <button className='button' onClick={getData} >Login</button>

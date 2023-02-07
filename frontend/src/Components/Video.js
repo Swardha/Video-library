@@ -1,6 +1,6 @@
 import React from 'react'
 import { useLocation} from 'react-router-dom'
-
+import ReactPlayer from 'react-player'
 
 
 const Video = () => {
@@ -22,14 +22,11 @@ const state = location.state.data;
           className="card" 
           style={{ height: "500px", "width":"100%" }}
         >
-          
-            <iframe   style={{ height: "500px", "width":"100%" }}
-                  controls
-                  allowfullscreen
-                  playing={true}
-              src={state.vidid}
-              title="YouTube video"
+    
               
+              <iframe frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; 
+              encrypted-media; gyroscope; picture-in-picture; web-share" title="PHOTOGRAPHY BASICS in 10 MINUTES"
+               width="100%" height="100%" src={state.vidid}
             ></iframe>
     
           <div className="card-body">
