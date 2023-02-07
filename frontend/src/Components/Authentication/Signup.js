@@ -34,7 +34,7 @@ const Signup = () => {
         }
     }
   return (
-    <div>
+    <div className='auth-section'>
       <div className="auth-container" >
         <h1 className='head-1'>Signup</h1><br/>
         <input className="auth-input" type="text" value={name} placeholder="Enter Name"
