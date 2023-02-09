@@ -29,20 +29,14 @@ const disable = storevideo? true
   return (
     <div>
       
-        <div
-          className="card">
+        <div className="card">
             <NavLink to="/video" state={{ data: data}}>
             <div  className='card-layout' >
           <div className="ratio ratio-16x9  w-100">
             <img src= {props.thumbnail} alt="img" />
-            </div>  </div>
+            </div>  
+            </div>
           </NavLink>
-         
-            {/* <iframe
-              src={props.vidid}
-              title="YouTube video"
-              asllowfullscreen
-            ></iframe> */}
 
           <div className="card-body">
             {/* <h1>{props.vkey} </h1> */}
