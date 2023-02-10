@@ -2,7 +2,7 @@ import "./App.css";
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import PrivateComp from "./Components/Authentication/PrivateComp";
-import Navbar from "./Components/Navbar";
+import Navbar from "./Components/navbar/Navbar";
 import Logout from "./Components/Authentication/Logout";
 import Like from "./Components/Like-Card/Like";
 import Home from "./Components/Home";

@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import "./navbar.css";
 import { Navigate, NavLink } from "react-router-dom";
 
 const Navbar = () => {
@@ -9,43 +10,33 @@ const Navbar = () => {
   };
 
   return (
-    <div>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-black">
-        <div className="container-fluid">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
+    <div className="header">
+      <nav className="open" >
+        <div >
+       
+         
             {auth ? (
-              <ul className="navbar-nav">
-                <li className="nav-item">
+              <ul className="nav-ul">
+                <li className="nav-li">
                   <NavLink className="nav-link " aria-current="page" to="/">
                     Home
                   </NavLink>
                 </li>
-                <li className="nav-item">
+                <li className="nav-li">
                   <NavLink className="nav-link " aria-current="page" to="/like">
                     Like
                   </NavLink>
                 </li>
 
-                <li className="nav-item">
+                <li className="nav-li">
                   <NavLink
                     className="nav-link "
                     aria-current="page"
                     to="/video"
                   ></NavLink>
                 </li>
-                <li className="nav-item">
-                  <NavLink className="nav-link" onClick={logout} to="/logout">
+                <li className="nav-li">
+                  <NavLink className="item" onClick={logout} to="/logout">
                     logout{" "}
                   </NavLink>
                 </li>
@@ -53,15 +44,15 @@ const Navbar = () => {
             ) : (
               <ul className="navbar-nav">
                 <li className="nav-item">
-                  <NavLink className="nav-link" to="/signup">
+                  <NavLink className="item" to="/signup">
                     Signup
                   </NavLink>
                 </li>
 
-                <li className="nav-item">
+                <li className="nav-li">
                   <NavLink
                     to="/login"
-                    className="nav-link disable"
+                    className="item"
                     tabIndex="-1"
                     aria-disabled="true"
                   >
@@ -70,9 +61,11 @@ const Navbar = () => {
                 </li>
               </ul>
             )}
-          </div>
+        
         </div>
       </nav>
+
+      <button className="menu-btn"><i class="fa-solid fa-bars"></i></button>
     </div>
   );
 };
